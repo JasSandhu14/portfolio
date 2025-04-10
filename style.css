@@ -89,3 +89,37 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   text-wrap: balance;
 }
+
+.resume{
+  h2 {
+    font-size: 200%;
+    margin: 0;
+  }
+}
+
+.contact {
+  .contact-element{
+    /*background-color: yellow; */
+    display: flex;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-inline-start: 1.5em;
+  }
+}
+
+.education {
+  max-width: fit-content;
+
+  .college{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-inline-start: 1.5em;
+  }
+}
+
+.experience{
+
+  .job {
+    font-size: 115%;
+  }
+}
