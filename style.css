@@ -99,7 +99,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact {
   .contact-element{
-    /*background-color: yellow; */
     display: flex;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -121,5 +120,16 @@ h1, h2, h3, h4, h5, h6 {
 
   .job {
     font-size: 115%;
+  }
+}
+
+.skills {
+  display: flex;
+
+  p {
+    flex: 1;
+    text-align: center;
+    margin-top: 2.5em;
+    margin-inline-end: 4em;
   }
 }
