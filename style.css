@@ -39,3 +39,15 @@ body {
     background-color: oklch(from var(--color-accent) 95% 5% h)
   }
   
+  /*input, textarea, button{
+    font: inherit;
+  }
+
+  label, input, textarea, button{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-block: 0.5em;
+  } */
+
+  
