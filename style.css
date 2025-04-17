@@ -13,6 +13,8 @@ nav {
   display: flex;
   margin-bottom: 1em;
   border-bottom: 1px solid oklch(80% 3% 200);
+  --border-color: oklch(50% 10% 200 / 40%);
+  border-bottom-color : var(--border-color);
 }
 
 nav a{
@@ -36,7 +38,7 @@ nav a.current {
 nav a:hover{
   border-bottom: 0.4em solid var(--color-accent);
   padding-bottom: 0.1em;
-  background-color: oklch(from var(--color-accent) 95% 5% h)
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 /*input, textarea, button{
@@ -132,4 +134,21 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 2.5em;
     margin-inline-end: 4em;
   }
+}
+
+html {
+  color-scheme: dark;
+}
+
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font: inherit;
+  font-size: 80%;
+}
+
+label option, label select{
+  font-size: 80%;
+  font: inherit;
 }
