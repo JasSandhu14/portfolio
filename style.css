@@ -152,3 +152,31 @@ label option, label select{
   font-size: 80%;
   font: inherit;
 }
+
+#profile-stats {
+
+  padding: 1rem;
+
+  dl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+
+  dt {
+    grid-row: 1;
+    font-size: 95%;
+    text-transform: uppercase;
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: -0.75rem;
+  }
+
+  dd {
+    grid-row: 2;
+    margin: 0;
+    font-size: 110%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+}
