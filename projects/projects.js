@@ -40,6 +40,9 @@ function renderPieChart(projectsGiven) {
       .append('path')
       .attr('d', arc)
       .attr('fill', colors(idx))
+      .on('click', () => {
+        selectedIndex = selectedIndex === i ? -1 : i;
+      });
   })
 
   let legend = d3.select('.legend');
@@ -67,3 +70,27 @@ searchInput.addEventListener('change', (event) => {
   renderProjects(filteredProjects, projectsContainer, 'h2');
   renderPieChart(filteredProjects);
 });
+
+let selectedIndex = -1;
+arcs.forEach((arc, i) => {
+  svg
+    .append('path')
+    .attr('d', arc)
+    .attr('fill', colors(i))
+    .on('click', () => {
+      
+
+      svg
+      .selectAll('path')
+      .attr('class', (_, idx) => (
+        selectedIndex === idx ? 'selected' : null
+      ));
+
+      legend
+      .selectAll('li')
+      .attr('class', (_, idx) => (
+        selectedIndex === idx ? 'selected' : null
+      ));
+    });
+});
+
