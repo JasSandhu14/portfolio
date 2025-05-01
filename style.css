@@ -180,3 +180,37 @@ label option, label select{
   }
   
 }
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+}
+
+.swatch {
+  display: inline-block;
+  width: 25px;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 50%;
+  row-gap: 0em;
+  column-gap: 0em;
+}
+
+.legend{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8em, 5fr));
+  flex: 1;
+}
+
+.data-points {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.5em;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}

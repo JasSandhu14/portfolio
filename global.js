@@ -109,11 +109,15 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     const title = project.title || 'Untitled';
     const image = project.image || '';
     const description = project.description || 'No description provided';
+    const year = project.year || '';
 
     article.innerHTML = `
       <${tag}>${title}</${tag}>
       <img src="${image}" alt="${title}">
+      <div>
       <p>${description}</p>
+      <p style="font-family: Baskerville; color:gray; font-variant-numeric: oldstyle-nums">${year}</p>
+      </div>
     `;
 
     containerElement.appendChild(article);
