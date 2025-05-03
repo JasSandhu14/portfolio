@@ -12,6 +12,8 @@ if (titleElement) {
   titleElement.textContent = `Projects (` + projects.length + ')';
 }
 
+let selectedIndex = -1;
+let filteredProjects;
 let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
 function renderPieChart(projectsGiven) {
   // re-calculate rolled data
@@ -31,27 +33,48 @@ function renderPieChart(projectsGiven) {
   // TODO: clear up paths and legends
   let newSVG = d3.select('svg');
   newSVG.selectAll('path').remove();
-  let newLegend = d3.select('ul')
+  let newLegend = d3.select('.legend')
   newLegend.selectAll('li').remove()
   // update paths and legends, refer to steps 1.4 and 2.2
-  let colors = d3.scaleOrdinal(d3.schemeTableau10);
+  let colors = d3.scaleOrdinal(d3.schemeTableau10)
+  console.log(colors)
+
   newArcs.forEach((arc, idx) => {
-    d3.select('svg')
+    newSVG
       .append('path')
       .attr('d', arc)
       .attr('fill', colors(idx))
-      .on('click', () => {
-        selectedIndex = selectedIndex === i ? -1 : i;
+      .on('click', function() {
+        selectedIndex = selectedIndex === idx ? -1 : idx;
+        newSVG
+          .selectAll('path')
+          .attr('class', (_, idx) => (
+            idx === selectedIndex ? 'selected' : ''
+          ));
+        legend
+          .selectAll('li')
+          .attr('class', (_, idx) => (
+            idx === selectedIndex ? 'selected' : ''
+          ));
+        if (selectedIndex === -1) {
+          renderProjects(filteredProjects ?? projects, projectsContainer, 'h2');
+        }
+        else {
+          let year = newData[selectedIndex].label;
+          let base = filteredProjects ?? projects;
+          let yearFiltered = base.filter(item => item.year == year);
+          renderProjects(yearFiltered, projectsContainer, 'h2')
+        }
       });
-  })
+  });
 
   let legend = d3.select('.legend');
   newData.forEach((d, idx) => {
-  legend
-    .append('li')
-    .attr('style', `--color:${colors(idx)}`) // set the style attribute while passing in parameters
-    .attr('class', 'data-points')
-    .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`); // set the inner html of <li>
+    legend
+      .append('li')
+      .attr('style', `--color:${colors(idx)}`) // set the style attribute while passing in parameters
+      .attr('class', 'data-points')
+      .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`); // set the inner html of <li>
 });
 }
 
@@ -70,27 +93,3 @@ searchInput.addEventListener('change', (event) => {
   renderProjects(filteredProjects, projectsContainer, 'h2');
   renderPieChart(filteredProjects);
 });
-
-let selectedIndex = -1;
-arcs.forEach((arc, i) => {
-  svg
-    .append('path')
-    .attr('d', arc)
-    .attr('fill', colors(i))
-    .on('click', () => {
-      
-
-      svg
-      .selectAll('path')
-      .attr('class', (_, idx) => (
-        selectedIndex === idx ? 'selected' : null
-      ));
-
-      legend
-      .selectAll('li')
-      .attr('class', (_, idx) => (
-        selectedIndex === idx ? 'selected' : null
-      ));
-    });
-});
-
