@@ -298,9 +298,17 @@ circle.selected {
 }
 
 #language-breakdown {
-  display: grid;
+  display: flex;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 2.5em;
+
+  dt {
+    font-weight: bold;
+    margin-right: -2.5em;
+  }
 
   dd {
-    opacity: 0.75;
+    flex: 1;
+    padding-left: 0.8em;
   }
 }
