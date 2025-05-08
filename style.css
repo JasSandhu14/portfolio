@@ -153,7 +153,7 @@ label option, label select{
   font: inherit;
 }
 
-#profile-stats {
+#profile-stats, #stats {
 
   padding: 1rem;
 
@@ -178,7 +178,6 @@ label option, label select{
     font-size: 110%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-  
 }
 
 #projects-pie-plot {
@@ -232,4 +231,8 @@ path {
   &:is(path) {
     fill: var(--color);
   }
+}
+
+.tick {
+  opacity: 0.25;
 }
