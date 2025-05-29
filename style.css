@@ -312,3 +312,37 @@ circle.selected {
     padding-left: 0.8em;
   }
 }
+
+.dots circle{
+  fill: var(--color-accent);
+  @starting-style {
+  r: 0;
+}
+}
+
+#scatter {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+  border-radius: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#scatter label {
+  display: flex;
+  flex: 1;
+  gap: 0.35em;
+}
+
+#commit-progress {
+  flex-grow: 1;
+  margin-top: 0.25em;
+}
+
+#commit-time {
+  margin-left: auto;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+
