@@ -167,7 +167,7 @@ label option, label select{
     grid-row: 1;
     font-size: 95%;
     text-transform: uppercase;
-    opacity: 0.5;
+    opacity: 0.55;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: -0.75rem;
   }
@@ -293,10 +293,6 @@ circle:hover {
   animation: marching-ants 2s linear infinite;
 }
 
-circle.selected {
-  fill: #ff6b6b;
-}
-
 #language-breakdown {
   display: flex;
   font-family: 'Courier New', Courier, monospace;
@@ -316,8 +312,12 @@ circle.selected {
 .dots circle{
   fill: var(--color-accent);
   @starting-style {
-  r: 0;
+    r: 0;
+  }
 }
+
+circle.selected {
+  fill: var(--color);
 }
 
 #scatter {
@@ -345,4 +345,46 @@ circle.selected {
   color: var(--color-accent);
 }
 
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 
+  > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  dt {
+    grid-column: 1;
+  }
+
+  dd {
+    grid-column: 2;
+  }
+}
+
+#files .loc {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color);
+  border-radius: 50%;
+}
+
+#files dd {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.15em;
+  padding-top: 0.6em;
+  margin-left: 0;
+}
+
+#files small {
+  display: block;
+  opacity: 0.55;
+  margin-top: -0.25em;
+}
