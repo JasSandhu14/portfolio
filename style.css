@@ -2,7 +2,7 @@ body {
     /* Set line height to 1.5 times the font size
          and use the OS’s UI font as the website font
        */
-    font: 100%/1.5 system-ui;
+    font: 115%/1.5 system-ui;
     max-width: 100ch;
     margin-inline: max(1em, (100% - 100ch) / 2);
     padding: 10px;
@@ -75,7 +75,7 @@ form button {
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 3;
-    gap: 1em;
+    gap: 0.5em;
   }
 
   h2 {
@@ -84,7 +84,7 @@ form button {
 }
 
 h1 {
-  font-size: 400%;
+  font-size: 300%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -111,17 +111,44 @@ h1, h2, h3, h4, h5, h6 {
 .education {
   max-width: fit-content;
 
-  .college{
-    margin-top: 0.5em;
+  .undergrad, .grad{
+    margin-top: -0.5em;
     margin-bottom: 0.5em;
     margin-inline-start: 1.5em;
   }
+
+  .education_title{
+    font-size: 115%;
+    font-weight: 600;
+    margin-inline-start: 1.5em;
+    margin-top: 0.25em;
+    margin-bottom: 0.5em;
+  }
+
+  .time_range {
+    font-weight: normal;
+  }
+
 }
 
 .experience{
 
-  .job {
+  .job_title {
     font-size: 115%;
+    font-weight: 600;
+    margin-inline-start: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .employer {
+    margin-inline-start: 1.8em;
+    margin-top: -0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  ul {
+    margin-inline-start: 2.0em;
   }
 }
 
@@ -132,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1;
     text-align: center;
     margin-top: 2.5em;
-    margin-inline-end: 4em;
+    margin-inline-end: 2em;
   }
 }
 
