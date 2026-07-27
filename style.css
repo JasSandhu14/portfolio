@@ -70,6 +70,7 @@ form button {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1.5em;
 
   article {
     display: grid;
@@ -81,6 +82,14 @@ form button {
   h2 {
     margin: 0;
   }
+}
+
+.projects article img {
+  width: 100%;
+  height: 200px;        /* pick whatever height fits your grid */
+  object-fit: cover;     /* crops to fill the box without distorting */
+  object-position: center;
+  border-radius: 8px;    /* optional, if you want rounded corners */
 }
 
 h1 {

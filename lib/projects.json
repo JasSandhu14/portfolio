@@ -2,31 +2,31 @@
     {
       "title": "Flight Data Analysis",
       "year": 2024,
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "image": "../images/plane.jpg",
       "description": "Investigate the key factors that influence the pricing of domestic flights from LAX to major US airports in June. Machine learning was then used to investigate the impact of each variable on flight price."
     },
     {
       "title": "League of Legends Hero Importance Analysis",
       "year": 2025,
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "image": "../images/lol.png",
       "description": "An analysis to see if certain roles are more important than others in professional League of Legends Esports. A classification predictor was then used to predict which role was used given game statistics."
     },
     {
       "title": "Computer Graphics Ray Tracing Project",
       "year": 2025,
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "image": "../images/ray_tracing.png",
       "description": "A project creating ray tracing lighting to render custom scenes. These scenes involved testing different materials and using different algorithms to be more efficient."
     },
     {
       "title": "Temporal Changes in Activity and Temperature of Mice",
       "year": 2025,
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "image": "../images/mice_project.png",
       "description": "Investigate the temperature of male and female mice throughout the day. A tooltip displays the change in activity and the respective temperature distribuitions."
     },
     {
       "title": "The Sleep Medication Story",
       "year": 2025,
-      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "image": "../images/sleep_medication_story.png",
       "description": "An analysis of a study testing the effectiveness of Temazepam. This project illustrates a story of the study along with a machine learning program to analyize one's own sleep."
     }
   ]
