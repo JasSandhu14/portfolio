@@ -111,8 +111,9 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
     const image = project.image || '';
     const description = project.description || 'No description provided';
     const year = project.year || '';
+    const url = project.url || '';
 
-    article.innerHTML = `
+    const content = `
       <${tag}>${title}</${tag}>
       <img src="${image}" alt="${title}">
       <div>
@@ -120,6 +121,10 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
       <p style="font-family: Baskerville; color:gray; font-variant-numeric: oldstyle-nums">${year}</p>
       </div>
     `;
+
+    article.innerHTML = url
+      ? `<a href="${url}" target="_blank" rel="noopener">${content}</a>`
+      : content;
 
     containerElement.appendChild(article);
   });

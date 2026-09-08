@@ -80,7 +80,7 @@ form button {
   }
 
   h2 {
-    margin: 0;
+    margin: 0.3em;
   }
 }
 
@@ -90,6 +90,16 @@ form button {
   object-fit: cover;     /* crops to fill the box without distorting */
   object-position: center;
   border-radius: 8px;    /* optional, if you want rounded corners */
+}
+
+.projects article a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.projects article a:hover {
+  opacity: 0.55;
 }
 
 h1 {

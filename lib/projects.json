@@ -3,48 +3,56 @@
       "title": "Flight Data Analysis",
       "year": 2024,
       "image": "../images/plane.jpg",
-      "description": "Investigate the key factors that influence the pricing of domestic flights from LAX to major US airports. Machine learning was then used to investigate the impact of each variable on flight price."
+      "description": "Investigate the key factors that influence the pricing of domestic flights from LAX to major US airports. Machine learning was then used to investigate the impact of each variable on flight price.",
+      "url": "https://github.com/JasSandhu14/Flight-Data-Project"
     },
     {
       "title": "LoL Role Analysis",
       "year": 2025,
       "image": "../images/lol.png",
-      "description": "An analysis to see if certain roles are more important than others in professional League of Legends Esports. A classification predictor was then used to predict which role was used given game statistics."
+      "description": "An analysis to see if certain roles are more important than others in professional League of Legends Esports. A classification predictor was then used to predict which role was used given game statistics.",
+      "url": "https://jassandhu14.github.io/League-Of-Legends-Role-Importance-Analysis/"
     },
     {
       "title": "Computer Graphics Ray Tracing Project",
       "year": 2025,
       "image": "../images/ray_tracing.png",
-      "description": "A project creating ray tracing lighting to render custom scenes. These scenes involved testing different materials and using different algorithms to be more efficient."
+      "description": "A project creating ray tracing lighting to render custom scenes. These scenes involved testing different materials and using different algorithms to be more efficient.",
+      "url": "https://github.com/JasSandhu14/ray_tracing_project/tree/main"
     },
     {
       "title": "Temporal Changes in Activity and Temperature of Mice",
       "year": 2025,
       "image": "../images/mice_project.png",
-      "description": "Visualize the temperature of male and female mice throughout the day. A tooltip displays the change in activity and the respective temperature distribuitions."
+      "description": "Visualize the temperature of male and female mice throughout the day. A tooltip displays the change in activity and the respective temperature distribuitions.",
+      "url": "https://mrona22.github.io/DSC106_Project3/"
     },
     {
       "title": "The Sleep Medication Story",
       "year": 2025,
       "image": "../images/sleep_medication_story.png",
-      "description": "An analysis of a study testing the effectiveness of Temazepam. This project illustrates a story of the study along with a machine learning program to analyize one's own sleep."
+      "description": "An analysis of a study testing the effectiveness of Temazepam. This project illustrates a story of the study along with a machine learning program to analyize one's own sleep.",
+      "url": "https://connieliugh.github.io/DSC106_Final_Project/index.html"
     },
     {
       "title": "New York City Taxi Classifier",
       "year": 2026,
       "image": "../images/nyc_taxi.png",
-      "description": "First experience with a large dataset that involved taxi rides in New York City. Analysis of data incorporated agents into the workflow for PCA, Boostrapping, and XGBoost."
+      "description": "First experience with a large dataset that involved taxi rides in New York City. Analysis of data incorporated agents into the workflow for PCA, Boostrapping, and XGBoost.",
+      "url": "https://github.com/JasSandhu14/DSC-291-Projects"
     },
     {
       "title": "Casual Reinforcement Learning",
       "year": 2026,
       "image": "../images/minigrid.png",
-      "description": "Use causal reinforcement learning to train a model in order to avoid overfitting. Experimented with different algorithms, Q-Learning, PPO, NOTEARS, and ideas, MiniGrid and Cartpole."
+      "description": "Use causal reinforcement learning to train a model in order to avoid overfitting. Experimented with different algorithms, Q-Learning, PPO, NOTEARS, and ideas, MiniGrid and Cartpole.",
+      "url": "https://github.com/JasSandhu14/DSC-245-Casual-RL"
     },
     {
       "title": "Boston Bikes",
       "year": 2025,
       "image": "../images/boston_bikes.png",
-      "description": "Work with a map to log the flow of bikers along popular roads in Boston."
+      "description": "Work with a map to log the flow of bikers along popular roads in Boston.",
+      "url": "https://github.com/JasSandhu14/BostonBikes"
     }
   ]
